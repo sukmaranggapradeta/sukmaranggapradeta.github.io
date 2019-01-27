@@ -433,7 +433,7 @@ footer p {
   font-size: 11px;
   text-align: center;
 }
-/*---------------------------------------------mobile--masi otw */
+/*---------------------------------------------mobile--masi otw 
 @media (max-width: 500) {
   main h1 {
     font-size: 50px;
@@ -449,4 +449,39 @@ footer p {
   .supporting .coltesti {
     width: 100%;
   }    
+}
+*/
+@media screen and  (max-width:950px)
+{
+
+  .jumbotron{
+    width: 100%;
+    height: auto;
+  }
+  .supporting .col {
+    width: 250px;
+  }
+  nav{
+    width: 100%;
+  }
+  .container{
+    width: 100%;
+  }
+}
+
+@media screen and  (max-width:400px)
+{
+  .jumbotron{
+    width: 100%;
+    height: auto;
+  }
+  .container{
+    width: 100%;
+  }
+  .supporting .col {
+    width: 100%;
+  }
+  nav{
+    width: 100%;
+  }
 }
