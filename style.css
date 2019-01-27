@@ -1,0 +1,449 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  /* -----------------------------------------------------Bagian atas*/
+header {
+  background-color: #333333;
+    /*posisi tetap diatas*/
+  position: fixed;
+  width: 100%;
+    /*biar ga ketumpuk main atau visible saat di scrolup*/
+  z-index: 1;
+  }
+nav {
+  margin: 0;
+  padding: 5px 0;
+  }
+nav li {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+    /*biar horizontal */
+  display: inline;
+  list-style: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 0.5px solid white;
+  text-align: center;
+  }  
+nav li a{
+  color: white;
+  text-decoration: none;
+}
+nav li:hover {
+  background-color:rgba(115, 115, 115, 0.5);
+  border: 1px solid white;
+  font-size: 16px;
+}
+main {
+  text-align: center;
+  top: 0px;
+  }
+p {
+  font-family: "Raleway";
+  }
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center;
+  }
+  /*----------------------------bagian homepage conten*/
+.jumbotron {
+  height: 800px;
+  background-image: url("./img/bghome.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;
+  }
+.btn-main {
+  border-radius: 5px;
+  background:rgba(0,0,0,.5);
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  padding: 16px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline;
+  }
+.btn-main :hover{
+  font-size: 25px;
+  }
+main h1 {
+  color: #333;
+  font-family: 'Monoton', sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  margin-top: 0px;
+  padding-top: 80px;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  }
+.supporting {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  }
+.border{
+  width: 190px;
+  height: 5px;
+  background:#434343;
+  margin: 26px auto;
+  border-radius: 5px;
+  }
+.inner h1{
+  color: #333;
+  font-family: 'Monoton', sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  }
+/*--------------------------------------------bagian produk*/
+.supporting .col {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  /*agar tampil horizonal*/
+  display: inline-block;
+  width: 240px;
+  border: 2px solid black;
+  margin-bottom: 30px;
+  margin-right: 10px;
+  padding-top: 10px;
+  }
+.supporting img {
+  width: 220px;  
+  } 
+.supporting h2 {
+  font-weight: 600;
+  font-size: 23px;
+  text-transform: uppercase;
+  } 
+.supporting p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  }
+.col a {
+  background-color: whitesmoke;
+  color: #333333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #333333; 
+  }
+.col{
+  padding: 10px auto;
+}
+/* -----------------------------------------------Bagian Contact us */
+.containernavloc {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.contactus{
+  width: 500px;
+  height: 400px;
+  color: #000;
+  display: inline-block;
+  position: relative;
+  padding: 50px 30px;
+  border-radius: 5px;
+}
+.location{
+  margin:10px;
+  size: 7x;
+}
+.avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+  border: 2px solid black;
+  background: rgba(0, 0, 0, 0.5);
+}
+h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 32px;
+}
+label{
+  float: left;
+}
+.containercontact {
+  max-width: 100%;
+  margin: 55px auto;
+  padding: 0 10px;
+  text-align: center;
+}
+.supportingcontact {
+  padding-top: 70px;
+  padding-bottom: 0px;
+  /*border: 2px solid red;*/
+}
+.supportingcontact .contactus {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  /*agar tampil horizonal*/
+  display: inline-block;
+  width: 350px;
+  border: 2px solid black;
+  margin-bottom: 20px;
+}
+.contactus input[type="text"], input[type="password"],input[type="email"]
+{
+  border-radius: 5px;
+  height: 20px;
+  width: 100%;
+  background: #FAFAFA;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.contactus textarea{
+  border-radius: 5px;
+  width: 100%;
+  background: #FAFAFA;
+  padding: 5px;
+}
+.contactus input[type="submit"]{
+  padding: 7px;
+  width: 50%;
+}
+.contactus input[type="submit"]:hover{
+  cursor: pointer;
+  background: #9EE3B8;
+  color:#434343;
+  border-radius: 5px;
+}
+.navlocation{
+  width: 100%;
+  background: #f1f1f1;
+  color: #434343;
+  text-align: center;
+}
+.collocation{
+  flex: 250px;
+  max-width: 400px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.rowlocation{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+.locations img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.borderlocation{
+  width: 2px;
+  height: 250px;
+  background:#434343;
+  margin: 90px auto;
+  border-radius: 10px;
+}
+.locations a{
+  text-decoration: none;
+}
+.judullocations{
+  padding-top: 20px;
+  font-size: 24px;
+  font: bold;
+}
+/*--------------------------------------------bagian pesan*/
+.supportingpesan {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.borderpesan{
+  width: 100%;
+  height: 5px;
+  background:#434343;
+  margin: 26px auto;
+  border-radius: 5px;
+}
+.innerpesan h1{
+  color: #333;
+  font-family: 'Monoton', sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+.row a{
+  color: #333333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/*--------------------------------------------bagian about us*/
+.borderaboutus{
+  width: 100%;
+  height: 1px;
+  background:#434343;
+  margin: 26px auto;
+  border-radius: 5px;
+  }
+.colaboutus{
+  flex: 100%;
+  max-width: 300;
+  box-sizing: border-box;
+  padding: 15px;
+    /* buat cek posisi
+    border: 2px solid red;
+    */
+  }
+.aboutusdetail{
+  padding: 30px;
+  margin :10px;
+  }
+.aboutusdetail img{
+  width: 300px;
+  height: 300px;
+  float: left;
+  padding-right: 30px;
+  }
+.aboutusdetail2 img{
+  width: 300px;
+  height: 300px;
+  float: right;
+  padding-left: 30px;
+  }
+.aboutusdetail2 a {
+  color: #333333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  }
+.rowaboutus{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  }
+.colaboutus p{
+  font-family: "Raleway";
+  margin: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  }
+.aboutusdetail2 p{
+  text-align: right;
+}
+.hurufdepan{
+  color: #434343;
+  font-size: 80px;
+  line-height: 60px;
+  float: left;
+}
+.aboutusdetail p{
+  text-align: left;
+  }
+/*--------------------------------bagian testimoni*/
+.stars{
+  color: palevioletred;
+  margin-bottom: 20px;
+}
+.testimonials{
+  padding: 40px 0;
+  background: #f1f1f1;
+  color: #434343;
+  text-align: center;
+}
+.inner{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+.inner h1{
+  font-family: "Raleway";
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.coltesti{
+  flex: 250px;
+  max-width: 300px;
+  box-sizing: border-box;
+  padding: 15px;
+  /* buat cek posisi
+  border: 2px solid red;
+  */
+}
+.testimonial{
+  background:white;
+  padding: 30px;
+}
+.testimonial img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.testimonial p{
+  font-family: "Raleway";
+}
+.name{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+  font-family: "Raleway";
+}
+/*--------------------------------bagian footer*/
+.containerfooter{
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  height: 30px;
+}
+footer p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
+  text-align: center;
+}
+/*---------------------------------------------mobile--masi otw */
+@media (max-width: 500) {
+  main h1 {
+    font-size: 50px;
+    padding: 0 40px;
+  }
+  .jumbotron{
+    box-sizing: border-box;
+    display: block;
+  }
+  .supporting .col {
+    width: 100%;
+  }
+}
