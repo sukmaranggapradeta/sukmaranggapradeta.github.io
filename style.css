@@ -485,3 +485,19 @@ footer p {
     width: 100%;
   }
 }
+@media screen and  (max-width:200px)
+{
+  .jumbotron{
+    width: 100%;
+    height: auto;
+  }
+  .container{
+    width: 100%;
+  }
+  .supporting .col {
+    width: 100%;
+  }
+col {
+    width: 100%;
+  }
+}
