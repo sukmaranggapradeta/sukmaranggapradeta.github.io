@@ -446,13 +446,7 @@ footer p {
   .supporting .col {
     width: 100%;
   }
-  .coltesti{
-   flex: 250px;
-   max-width: 300px;
-   box-sizing: border-box;
-   padding: 15px;
-    /* buat cek posisi
-    border: 2px solid red;
-    */
-  }
+  .supporting .coltesti {
+    width: 100%;
+  }    
 }
