@@ -45,7 +45,7 @@ p {
   font-family: "Raleway";
   }
 .container {
-  max-width: 940px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 10px;
   text-align: center;
@@ -72,51 +72,27 @@ p {
   text-transform: uppercase;
   display: inline;
   }
-.btn-main :hover{
-  font-size: 25px;
-  }
+
 main h1 {
   color: #333;
   font-family: 'Monoton', sans-serif;
-  font-weight: 400;
+  font-weight: 450;
   font-size: 50px;
   margin-top: 0px;
   padding-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   text-transform: uppercase;
   letter-spacing: 0.5em;
   }
-.supporting {
-  padding-top: 80px;
-  padding-bottom: 30px;
-  }
-.border{
-  width: 190px;
-  height: 5px;
-  background:#434343;
-  margin: 26px auto;
-  border-radius: 5px;
-  }
-.inner h1{
-  color: #333;
-  font-family: 'Monoton', sans-serif;
-  font-weight: 400;
-  font-size: 50px;
-  margin-top: 0px;
-  padding-top: 0px;
-  margin-bottom: 0px;
-  text-transform: uppercase;
-  letter-spacing: 1em;
-  }
 /*--------------------------------------------bagian animasi welcome*/
-main h1 span{
-  display: table-cell;
-  animation: animate 6s linear infinite;
-  margin: 0;
-  padding: 0;
-  display: inline-table;
-  justify-content: center;
-  align-self: center;
+ main h1 span{
+    display: table-cell;
+    animation: animate 6s linear infinite;
+    margin: 0;
+    padding: 0;
+    display: inline-table;
+    justify-content: center;
+    align-self: center;
   }
 h1 span:nth-child(1){
   animation-delay: 0s;
@@ -181,18 +157,19 @@ h1 span:nth-child(19){
 h1 span:nth-child(20){
   animation-delay: 5s;
 }
-  @keyframes animate{
+  @keyframes animate
+  {
     0%,100%
     {
       color: #fff;
       filter: blur(2px);
-      text-shadow:    0 0 10px #00b3ff,
-                      0 0 20px #00b3ff,
-                      0 0 40px #00b3ff,
-                      0 0 80px #00b3ff,
-                      0 0 120px #00b3ff,
-                      0 0 200px #00b3ff,
-                      0 0 400px #00b3ff,
+      text-shadow: 0 0 10px aqua,
+      0 0 20px #00b3ff,
+      0 0 40px #00b3ff,
+      0 0 80px #00b3ff,
+      0 0 120px #00b3ff,
+      0 0 200px #00b3ff,
+      0 0 400px #00b3ff,
     }   
     5%,85%
     {
@@ -200,6 +177,29 @@ h1 span:nth-child(20){
       filter: blur(0px);
       text-shadow: none;
     }
+  }
+
+.supporting {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  }
+.border{
+  width: 190px;
+  height: 5px;
+  background:#434343;
+  margin: 26px auto;
+  border-radius: 5px;
+  }
+.inner h1{
+  color: #333;
+  font-family: 'Monoton', sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  letter-spacing: 1em;
   }
 /*--------------------------------------------bagian produk*/
 .supporting .col {
