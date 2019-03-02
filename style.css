@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
 
 html, body {
     margin: 0;
@@ -23,6 +24,7 @@ nav li {
   font-size: 12px;
     /*biar horizontal */
   display: inline;
+  /* kalo blok listdown buat hp*/
   list-style: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -46,7 +48,7 @@ p {
   font-family: "Raleway";
   }
 .container {
-  max-width: 960px;
+  width: 960px;
   margin: 0 auto;
   padding: 0 10px;
   text-align: center;
@@ -77,7 +79,7 @@ p {
 main h1 {
   color: #333;
   font-family: 'Monoton', sans-serif;
-  font-weight: 350;
+  font-weight: 450;
   font-size: 50px;
   margin-top: 0px;
   padding-top: 80px;
@@ -85,8 +87,7 @@ main h1 {
   text-transform: uppercase;
   letter-spacing: 0.5em;
   }
-/*--------------------------------------------bagian animasi welcome*/
- main h1 span{
+  main h1 span{
     display: table-cell;
     animation: animate 6s linear infinite;
     margin: 0;
@@ -179,7 +180,6 @@ h1 span:nth-child(20){
       text-shadow: none;
     }
   }
-
 .supporting {
   padding-top: 80px;
   padding-bottom: 30px;
@@ -494,8 +494,9 @@ label{
   box-sizing: border-box;
   padding: 15px;
   /* buat cek posisi
-  border: 2px solid red;
+    border: 2px solid red;
   */
+
 }
 .testimonial{
   background:white;
@@ -515,6 +516,19 @@ label{
   margin: 20px 0;
   font-family: "Raleway";
 }
+/*--------------------------------bagian footer*/
+.containerfooter{
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  height: 30px;
+}
+footer p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
+  text-align: center;
+}
+
 /*--------------------------------bagian games*/
 #alert-games-overlay{
   display: none;
@@ -554,7 +568,19 @@ label{
   padding: 0px;
   text-align: center;
 }
-
+/* #buttonGames{
+    border-radius: 5px;
+    background:rgba(0,0,0,.5);
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    padding: 16px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline;
+} */
 .btn {
   color: #434343;
   cursor: pointer;
@@ -773,36 +799,7 @@ label{
   top: 20px;
 }
 
-/*--------------------------------bagian footer*/
-.containerfooter{
-  background-color: #333;
-  color: #fff;
-  padding: 10px 0;
-  height: 30px;
-}
-footer p {
-  font-family: 'Raleway', sans-serif;
-  font-size: 11px;
-  text-align: center;
-}
-/*---------------------------------------------mobile--masi otw 
-@media (max-width: 500) {
-  main h1 {
-    font-size: 50px;
-    padding: 0 40px;
-  }
-  .jumbotron{
-    box-sizing: border-box;
-    display: block;
-  }
-  .supporting .col {
-    width: 100%;
-  }
-  .supporting .coltesti {
-    width: 100%;
-  }    
-}
-*/
+/*---------------------------------------------mobile--masi otw */
 @media screen and  (max-width:950px)
 {
 
@@ -820,14 +817,17 @@ footer p {
     width: 100%;
   }
   .coltesti{
-  flex: 37%;
-  max-width: 37%;
-  box-sizing: border-box;
-  padding: 15px;
+    flex: 40%;
+    max-width: 40%;
+    box-sizing: border-box;
+    padding: 15px;
+    /* buat cek posisi
+    border: 2px solid red;
+    */
   }
 }
 
-@media screen and  (max-width:400px)
+@media screen and  (max-width:475px)
 {
   .jumbotron{
     width: 100%;
@@ -839,35 +839,16 @@ footer p {
   .supporting .col {
     width: 100%;
   }
-  nav{
-    width: 100%;
-  }
-  .coltesti{
-  flex: 70%;
-  max-width: 70%;
-  box-sizing: border-box;
-  padding: 15px;
-  }
+.col{
+  width: 100%;
 }
-@media screen and  (max-width:200px)
-{
-  .jumbotron{
-    width: 100%;
-    height: auto;
-  }
-  .container{
-    width: 100%;
-  }
-  .supporting .col {
-    width: 100%;
-  }
-  col {
-    width: 100%;
-  }
-  .coltesti{
+.coltesti{
   flex: 70%;
   max-width: 70%;
   box-sizing: border-box;
   padding: 15px;
-  }
+  /* buat cek posisi
+  border: 2px solid red;
+  */
+}
 }
