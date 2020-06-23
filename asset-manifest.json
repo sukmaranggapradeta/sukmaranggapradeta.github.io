@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.95d9390f.chunk.css",
+    "main.js": "/static/js/main.8f69102f.chunk.js",
+    "main.js.map": "/static/js/main.8f69102f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d7b4ca07.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d7b4ca07.js.map",
+    "static/js/2.530bf0fa.chunk.js": "/static/js/2.530bf0fa.chunk.js",
+    "static/js/2.530bf0fa.chunk.js.map": "/static/js/2.530bf0fa.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.5dd6982ab15956d88c3322953652f92c.js": "/precache-manifest.5dd6982ab15956d88c3322953652f92c.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.95d9390f.chunk.css.map": "/static/css/main.95d9390f.chunk.css.map",
+    "static/js/2.530bf0fa.chunk.js.LICENSE.txt": "/static/js/2.530bf0fa.chunk.js.LICENSE.txt",
+    "static/media/aboutMe.gif": "/static/media/aboutMe.83c2ab3b.gif",
+    "static/media/social_media_logo_facebook_icon-icons.com_59059.6e8d0daf.svg": "/static/media/social_media_logo_facebook_icon-icons.com_59059.6e8d0daf.svg",
+    "static/media/social_media_logo_instagram_icon-icons.com_59062.edacb7b7.svg": "/static/media/social_media_logo_instagram_icon-icons.com_59062.edacb7b7.svg",
+    "static/media/social_media_logo_linkedin_icon-icons.com_59079.5562d8a9.svg": "/static/media/social_media_logo_linkedin_icon-icons.com_59079.5562d8a9.svg",
+    "static/media/social_media_logo_twitter_icon-icons.com_59061.8364207e.svg": "/static/media/social_media_logo_twitter_icon-icons.com_59061.8364207e.svg",
+    "static/media/social_media_logo_whatsapp_icon-icons.com_59066.964d6fc4.svg": "/static/media/social_media_logo_whatsapp_icon-icons.com_59066.964d6fc4.svg",
+    "static/media/social_media_logo_you_tube_icon-icons.com_59065.3e65ecf8.svg": "/static/media/social_media_logo_you_tube_icon-icons.com_59065.3e65ecf8.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d7b4ca07.js",
+    "static/js/2.530bf0fa.chunk.js",
+    "static/css/main.95d9390f.chunk.css",
+    "static/js/main.8f69102f.chunk.js"
+  ]
+}

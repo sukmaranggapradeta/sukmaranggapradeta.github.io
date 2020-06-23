@@ -1,2 +1,0 @@
-# sukmaranggapradeta.github.io
-websiteku
