@@ -1,13 +1,13 @@
 import styled from "styled-components";
 // import { theme } from "shared";
-// import { LARGE, MEDIUM, SMALL } from "global/media-query";
+import { MEDIUM, SMALL } from "global/media-query";
 
 export const WrapperApp = styled.div`
   .wrapper-body-content {
     max-width: 1200px;
     margin: 0 auto;
     /* border: dashed red 0.5px; */
-    padding: 40px 16px 100px 16px;
+    padding: 32px 16px 100px 16px;
     min-height: calc(70vh - 140px);
   }
 
@@ -69,7 +69,33 @@ export const WrapperApp = styled.div`
     font-weight: bold;
   }
 
+  .text-decoration-none {
+    text-decoration: none;
+  }
+
+  .ml-16 {
+    margin-left: 16px;
+  }
+
   .mr-16 {
     margin-right: 16px;
+  }
+
+  .mb-16 {
+    margin-bottom: 16px;
+  }
+
+  .mb-32 {
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: ${MEDIUM}) {
+    .wrapper-body-content {
+      padding: 32px 16px;
+      /* min-height: calc(70vh - 140px); */
+    }
+  }
+
+  @media (max-width: ${SMALL}) {
   }
 `;

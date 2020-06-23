@@ -2,16 +2,23 @@ import styled from "styled-components";
 import { LARGE, MEDIUM, SMALL } from "global/media-query";
 
 export const Wrapper = styled.div`
-  /* border: solid black 3px; */
-  /* background-color: #f5f6f7; */
-  /* min-height: 70vh; */
+  display: flex;
+  justify-content: center;
+
+  max-width: 400px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 
   @media (max-width: ${LARGE}) {
-    /* min-height: 75vh; */
   }
+
   @media (max-width: ${MEDIUM}) {
-    min-height: auto;
+    max-width: 80%;
   }
+
   @media (max-width: ${SMALL}) {
   }
 `;
