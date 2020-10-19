@@ -1,14 +1,23 @@
 import styled from "styled-components";
-// import { theme } from "shared";
 import { MEDIUM, SMALL } from "global/media-query";
 
 export const WrapperApp = styled.div`
+  /* body {
+    margin: 0;
+  } */
+  a {
+    text-decoration: none;
+  }
+
   .wrapper-body-content {
     max-width: 1200px;
     margin: 0 auto;
-    /* border: dashed red 0.5px; */
     padding: 32px 16px 100px 16px;
     min-height: calc(70vh - 140px);
+  }
+
+  .d-flex {
+    display: flex;
   }
 
   .flex-center {
@@ -16,7 +25,6 @@ export const WrapperApp = styled.div`
     justify-content: center;
     align-content: center;
     align-items: center;
-    text-align: center;
   }
 
   .flex-column {
@@ -65,12 +73,20 @@ export const WrapperApp = styled.div`
     text-transform: uppercase;
   }
 
-  .text-bold {
+  .font-bold {
     font-weight: bold;
   }
 
   .text-decoration-none {
     text-decoration: none;
+  }
+
+  .my-16 {
+    margin: 16px 0;
+  }
+
+  .my-8 {
+    margin: 8px 0;
   }
 
   .ml-16 {
@@ -89,10 +105,39 @@ export const WrapperApp = styled.div`
     margin-bottom: 32px;
   }
 
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    /* width: 40%; */
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .container {
+    padding: 2px 16px;
+    @media (max-width: ${SMALL}) {
+      padding: 2px 12px;
+    }
+  }
+
+  .black {
+    color: #1f2667;
+  }
+
+  .grey {
+    /* color: #8f92b3; */
+    color: #1f2667;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
   @media (max-width: ${MEDIUM}) {
     .wrapper-body-content {
       padding: 32px 16px;
-      /* min-height: calc(70vh - 140px); */
     }
   }
 

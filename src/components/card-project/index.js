@@ -1,13 +1,46 @@
 import React from "react";
-import { Wrapper } from "./styles";
+import { Wrapper, SectionTop, SectionBottom, Title } from "./styles";
+// import { NavLink } from "react-router-dom";
+import { P1 } from "components/typography";
 
-function index() {
+function index({ item }) {
   return (
-    <Wrapper>
-      <img
-        src="https://raw.githubusercontent.com/sukmaranggapradeta/public/f2209ba9734d0b2eac546c6bd726d9eab4f87451/undraw_photo_4yb9.svg"
-        alt=""
-      />
+    <Wrapper className="card">
+      {item.url ? (
+        <a target="_blank" rel="noopener noreferrer" href={item.url}>
+          <SectionTop>
+            <img
+              src={
+                item.pic
+                  ? require(`pages/projects/thumbnail/${item.pic}`)
+                  : require("img/no_image.svg")
+              }
+              alt={item.title}
+            />
+          </SectionTop>
+          <SectionBottom className="container">
+            <Title>{item.title}</Title>
+            <P1 className="grey">{item.desc}</P1>
+          </SectionBottom>
+        </a>
+      ) : (
+        <>
+          <SectionTop>
+            <img
+              src={
+                item.pic
+                  ? require(`pages/projects/thumbnail/${item.pic}`)
+                  : require("img/no_image.svg")
+              }
+              alt={item.title}
+            />
+          </SectionTop>
+          <SectionBottom className="container">
+            <Title>{item.title}</Title>
+            <P1 className="grey">{item.desc}</P1>
+          </SectionBottom>
+        </>
+      )}
     </Wrapper>
   );
 }

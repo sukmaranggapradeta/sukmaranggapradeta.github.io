@@ -13,7 +13,7 @@ function index() {
       />
       <H2>Looks like you are lost in space</H2>
       <NavLink to="/home" className="text-decoration-none">
-        <Button primary class="btn grey darken-4">
+        <Button primary className="btn grey darken-4">
           back to Home
         </Button>
       </NavLink>

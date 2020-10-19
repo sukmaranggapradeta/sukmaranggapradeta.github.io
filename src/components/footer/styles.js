@@ -1,10 +1,9 @@
 import styled from "styled-components";
-// import theme from "global/theme";
 import { XLARGE, LARGE, MEDIUM, SMALL } from "global/media-query";
+import theme from "global/theme";
 
 export const Wrapper = styled.div`
   height: 25vh;
-  /* position: absolute; */
   bottom: 0;
   width: 100%;
   display: flex;
@@ -26,7 +25,7 @@ export const Wrapper = styled.div`
 
   .curve-background {
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    background: linear-gradient(45deg, #e27fcb 0%, #5d6bf8 100%);
+    background: linear-gradient(45deg, #e27fcb 0%, ${theme.color.purple} 80%);
     width: 250px;
     height: 250px;
     display: flex;
@@ -85,9 +84,7 @@ export const Wrapper = styled.div`
 `;
 
 export const FooterSection = styled.div`
-  /* border: dashed red 1px; */
   width: 20%;
-  /* margin-right: 32px; */
   padding: 0 0.5%;
 
   .footer-icon {
@@ -97,9 +94,9 @@ export const FooterSection = styled.div`
   }
 
   .footer-icon g {
-    fill: #7569de;
+    fill: ${theme.color.purple};
     :hover {
-      fill: #172c41;
+      fill: #545860;
     }
   }
   .footer-icon path {
@@ -108,18 +105,12 @@ export const FooterSection = styled.div`
   }
 
   @media (max-width: ${XLARGE}) {
-    /* width: 20%; */
-    /* margin-right: 16px; */
-    /* padding: 0 0.5%; */
-
     .footer-icon {
       width: 3.472vw;
       margin: 0 12px 4px 0pc;
     }
   }
   @media (max-width: ${LARGE}) {
-    /* width: 15%; */
-    /* margin-right: 16px; */
   }
   @media (max-width: ${MEDIUM}) {
   }

@@ -1,13 +1,11 @@
 import styled, { css } from "styled-components";
-// import { theme } from "shared";
 import { LARGE, MEDIUM, SMALL } from "global/media-query";
 
 export const Wrapper = styled.div`
-  /* border: solid 1px green; */
   display: flex;
 
   img {
-    margin-right:32px;
+    margin-right: 32px;
     width: 400px;
   }
 
@@ -29,7 +27,7 @@ export const Wrapper = styled.div`
 
     img {
       margin-right: 0;
-      margin-left:0;
+      margin-left: 0;
       width: 90%;
       height: 90%;
     }

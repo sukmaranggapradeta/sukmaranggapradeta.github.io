@@ -1,35 +1,41 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import {
   BrowserRouter as Router,
   Route,
-  // Link,
   Switch,
-  // Redirect,
-  // useLocation,
+  Redirect,
 } from "react-router-dom";
 import { WrapperApp } from "./styles";
-
-import Home from "pages/home";
-import AboutMe from "pages/about-me";
-import Project from "pages/projects";
-
 import Header from "components/header";
 import Footer from "components/footer";
-import NotFound from "pages/not-found";
-// import Routes from "config/routes";
+import Loading from "components/loading";
+// const Header = lazy(() => import("components/header"));
+// const Footer = lazy(() => import("components/footer"));
+
+const Home = lazy(() => import("pages/home"));
+const AboutMe = lazy(() => import("pages/about-me"));
+const Contact = lazy(() => import("pages/contact"));
+const Project = lazy(() => import("pages/projects"));
+const NotFound = lazy(() => import("pages/not-found"));
 
 function App() {
   return (
     <WrapperApp>
       <Router>
         <Header />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/home" component={Home} />
-          <Route exact path="/project" component={Project} />
-          <Route exact path="/about" component={AboutMe} />
-          <Route component={NotFound} />
-        </Switch>
+        <Suspense fallback={<Loading />}>
+          <Switch>
+            {/* <Route exact path="/" component={Home} /> */}
+            <Route exact path="/">
+              <Redirect to="/home" /> }
+            </Route>
+            <Route exact path="/home" component={Home} />
+            <Route exact path="/project" component={Project} />
+            <Route exact path="/about" component={AboutMe} />
+            <Route exact path="/contact" component={Contact} />
+            <Route component={NotFound} />
+          </Switch>
+        </Suspense>
         <Footer />
       </Router>
     </WrapperApp>

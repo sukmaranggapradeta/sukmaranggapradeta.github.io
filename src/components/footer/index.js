@@ -1,19 +1,17 @@
 import React from "react";
-import {
-  Wrapper,
-  FooterSection,
-  // FooterLinktSection,
-  CopyRightSection,
-} from "./styles";
+import { Wrapper, FooterSection, CopyRightSection } from "./styles";
 import logoFooter from "img/footer.png";
 import { P1, TitleLink } from "components/typography";
+import { NavLink } from "react-router-dom";
 
 import { ReactComponent as FacebookIcon } from "img/social_media_logo_facebook_icon-icons.com_59059.svg";
 import { ReactComponent as WhatsAppIcon } from "img/social_media_logo_whatsapp_icon-icons.com_59066.svg";
 import { ReactComponent as IntagramIcon } from "img/social_media_logo_instagram_icon-icons.com_59062.svg";
 import { ReactComponent as LinkInIcon } from "img/social_media_logo_linkedin_icon-icons.com_59079.svg";
 import { ReactComponent as YoutubeIcon } from "img/social_media_logo_you_tube_icon-icons.com_59065.svg";
-import { ReactComponent as TwitterIcon } from "img/social_media_logo_twitter_icon-icons.com_59061.svg";
+// import { ReactComponent as TwitterIcon } from "img/social_media_logo_twitter_icon-icons.com_59061.svg";
+
+import { scrollToTop } from "global/main";
 
 function index() {
   return (
@@ -30,9 +28,18 @@ function index() {
               <h5 className="color-grey text-uppercase">page</h5>
             </div>
             <div className="flex-column">
-              <TitleLink>Home</TitleLink>
-              <TitleLink>Contact</TitleLink>
-              <TitleLink>Project</TitleLink>
+              <NavLink to="/home" onClick={() => scrollToTop()}>
+                <TitleLink>Home</TitleLink>
+              </NavLink>
+              <NavLink to="/project" onClick={() => scrollToTop()}>
+                <TitleLink>Project</TitleLink>
+              </NavLink>
+              <NavLink to="/about" onClick={() => scrollToTop()}>
+                <TitleLink>About</TitleLink>
+              </NavLink>
+              <NavLink to="/contact" onClick={() => scrollToTop()}>
+                <TitleLink>Contact</TitleLink>
+              </NavLink>
             </div>
           </FooterSection>
           <FooterSection>
@@ -56,7 +63,7 @@ function index() {
           </FooterSection>
           <FooterSection>
             <div>
-              <h5 className="color-grey text-uppercase">Sharing</h5>
+              <h5 className="color-grey text-uppercase">Get In Touch</h5>
             </div>
             <div className="section-part-footer">
               <FacebookIcon className="footer-icon"></FacebookIcon>
@@ -64,13 +71,13 @@ function index() {
               <IntagramIcon className="footer-icon"></IntagramIcon>
               <LinkInIcon className="footer-icon"></LinkInIcon>
               <YoutubeIcon className="footer-icon"></YoutubeIcon>
-              <TwitterIcon className="footer-icon"></TwitterIcon>
+              {/* <TwitterIcon className="footer-icon"></TwitterIcon> */}
             </div>
           </FooterSection>
         </div>
 
         <CopyRightSection>
-          <P1 className="color-grey">Copyright © 2020 Sukma Rangga</P1>
+          <P1 className="grey">Copyright © 2020 Sukma Rangga</P1>
         </CopyRightSection>
       </div>
     </Wrapper>

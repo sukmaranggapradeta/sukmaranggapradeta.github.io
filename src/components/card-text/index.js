@@ -8,7 +8,7 @@ function index(props) {
       <div className="justify-center flex-column">
         {props.title && <H2>{props.title}</H2>}
 
-        {props.description && <P1>{props.description}</P1>}
+        {props.description && <P1 className="grey">{props.description}</P1>}
       </div>
     </Wrapper>
   );
