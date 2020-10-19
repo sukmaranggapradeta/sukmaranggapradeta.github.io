@@ -21,6 +21,13 @@ function index({ item }) {
           <SectionBottom className="container">
             <Title>{item.title}</Title>
             <P1 className="grey">{item.desc}</P1>
+            <div className="d-flex">
+              {item.tech.map((tag, i) => (
+                <div class="tag" key={i}>
+                  {tag}
+                </div>
+              ))}
+            </div>
           </SectionBottom>
         </a>
       ) : (
@@ -38,6 +45,13 @@ function index({ item }) {
           <SectionBottom className="container">
             <Title>{item.title}</Title>
             <P1 className="grey">{item.desc}</P1>
+            <div className="d-flex">
+              {item.tech.map((tag, i) => (
+                <div class="tag" key={i}>
+                  {tag}
+                </div>
+              ))}
+            </div>
           </SectionBottom>
         </>
       )}
