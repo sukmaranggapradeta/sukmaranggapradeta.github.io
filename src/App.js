@@ -21,27 +21,29 @@ const NotFound = lazy(() => import("pages/not-found"));
 
 function App() {
   return (
-    <HashRouter basename="/">
-      <WrapperApp>
-        <Router>
-          <Header />
-          <Suspense fallback={<Loading />}>
-            <Switch>
-              {/* <Route exact path="/" component={Home} /> */}
-              <Route exact path="/">
-                <Redirect to="/home" /> }
-              </Route>
-              <Route exact path="/home" component={Home} />
-              <Route exact path="/project" component={Project} />
-              <Route exact path="/about" component={AboutMe} />
-              <Route exact path="/contact" component={Contact} />
-              <Route component={NotFound} />
-            </Switch>
-          </Suspense>
-          <Footer />
-        </Router>
-      </WrapperApp>
-    </HashRouter>
+    <WrapperApp>
+      {/* <Router> */}
+      <HashRouter basename="/">
+        <Header />
+        <Suspense fallback={<Loading />}>
+          {/* <HashRouter> */}
+          {/* <Route exact path="/" component={Home} /> */}
+          <Switch>
+            <Route exact path="/">
+              <Redirect to="/home" /> }
+            </Route>
+            <Route exact path="/home" component={Home} />
+            <Route exact path="/project" component={Project} />
+            <Route exact path="/about" component={AboutMe} />
+            <Route exact path="/contact" component={Contact} />
+            <Route component={NotFound} />
+            {/* </HashRouter> */}
+          </Switch>
+        </Suspense>
+        <Footer />
+      </HashRouter>
+      {/* </Router> */}
+    </WrapperApp>
   );
 }
 
