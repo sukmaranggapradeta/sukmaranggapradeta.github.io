@@ -23,7 +23,7 @@ function index({ item }) {
             <P1 className="grey">{item.desc}</P1>
             <div className="d-flex">
               {item.tech.map((tag, i) => (
-                <div class="tag" key={i}>
+                <div className="tag" key={i}>
                   {tag}
                 </div>
               ))}
@@ -47,7 +47,7 @@ function index({ item }) {
             <P1 className="grey">{item.desc}</P1>
             <div className="d-flex">
               {item.tech.map((tag, i) => (
-                <div class="tag" key={i}>
+                <div className="tag" key={i}>
                   {tag}
                 </div>
               ))}
