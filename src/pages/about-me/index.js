@@ -1,21 +1,25 @@
 import React from "react";
 import { Wrapper } from "./styles";
-// import CardImgText from "components/card-img-text";
 import { Helmet } from "react-helmet";
+import CardImg from "components/card-img";
+import CardText from "components/card-text";
 
 function index() {
   return (
     <Wrapper className="wrapper-body-content">
       <Helmet>
         <title>About Me</title>
-        <meta name="description" content="Ini Content About Me" />
+        <meta name="description" content="Sukma Rangga Pradita Wijaya CV" />
       </Helmet>
-      <h1>My CV</h1>
-      {/* <CardImgText
-        title="About Me"
-        button
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aut mollitia corrupti provident officiis quis asperiores quam tenetur? Consequatur odit, nemo, debitis cupiditate esse harum maiores perspiciatis facere nulla laboriosam ullam sed rerum quam accusamus aliquid, est et repudiandae ex! Ea assumenda neque voluptatibus! Maiores reiciendis enim blanditiis sapiente ea."
-      ></CardImgText> */}
+
+      <CardImg
+        className="mb-32"
+        img="https://raw.githubusercontent.com/sukmaranggapradeta/public/f2209ba9734d0b2eac546c6bd726d9eab4f87451/undraw_under_construction_46pa.svg"
+      />
+      <CardText
+        title="Under Maintanance"
+        description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, nostrum porro ex fugiat deserunt mollitia cupiditate dolores, perferendis doloremque officia alias reprehenderit nobis amet! Est non autem quas consequuntur nihil esse accusantium ipsa saepe officia natus sequi enim, quos, provident delectus quam. Nesciunt veniam tenetur quia sapiente! Voluptatum, eum quae."
+      />
     </Wrapper>
   );
 }

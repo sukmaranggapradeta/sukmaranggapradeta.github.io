@@ -3,7 +3,7 @@ import {
   HashRouter,
   // BrowserRouter as Router,
   Route,
-  Switch,
+  // Switch,
   Redirect,
 } from "react-router-dom";
 import { WrapperApp } from "./styles";
@@ -17,7 +17,7 @@ const Home = lazy(() => import("pages/home"));
 const AboutMe = lazy(() => import("pages/about-me"));
 const Contact = lazy(() => import("pages/contact"));
 const Project = lazy(() => import("pages/projects"));
-const NotFound = lazy(() => import("pages/not-found"));
+// const NotFound = lazy(() => import("pages/not-found"));
 
 function App() {
   return (
