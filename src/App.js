@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import {
   HashRouter,
-  BrowserRouter as Router,
+  // BrowserRouter as Router,
   Route,
   Switch,
   Redirect,
@@ -23,14 +23,14 @@ function App() {
   return (
     <WrapperApp>
       {/* <Router> */}
-      <HashRouter basename="/">
+      <HashRouter>
         <Header />
         <Suspense fallback={<Loading />}>
           {/* <HashRouter> */}
           {/* <Route exact path="/" component={Home} /> */}
           <Switch>
             <Route exact path="/">
-              <Redirect to="/home" /> }
+              <Redirect to="/home" />
             </Route>
             <Route exact path="/home" component={Home} />
             <Route exact path="/project" component={Project} />
