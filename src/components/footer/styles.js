@@ -25,7 +25,11 @@ export const Wrapper = styled.div`
 
   .curve-background {
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    background: linear-gradient(45deg, #e27fcb 0%, ${theme.color.purple} 80%);
+    background: linear-gradient(
+      45deg,
+      ${theme.color.two} 0%,
+      ${theme.color.one} 80%
+    );
     width: 250px;
     height: 250px;
     display: flex;
