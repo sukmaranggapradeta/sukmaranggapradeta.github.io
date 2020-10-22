@@ -7,7 +7,7 @@ const H2Style = styled.h2`
   letter-spacing: 0.2em;
   margin: inherit;
   text-align: left;
-  color: #6a48cd;
+  /* color: #6a48cd; */
   font-family: "Roboto", Sans-serif;
   font-size: 20px;
   /* font-weight: 900; */

@@ -55,7 +55,7 @@ export const MenuHeader = styled.div`
     z-index: 1;
   }
   nav.shift ul li a:hover {
-    color: #91640f;
+    color: #565452;
   }
   nav.shift ul li a:after {
     display: block;
@@ -85,7 +85,7 @@ export const MenuHeader = styled.div`
     margin: auto;
     height: 100%;
     background: #f1c40f;
-    color: #91640f;
+    color: #565452;
   }
 
   @media (max-width: ${LARGE}) {

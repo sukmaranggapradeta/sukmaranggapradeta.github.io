@@ -1,5 +1,5 @@
 import React from "react";
-import { Wrapper, FooterSection, CopyRightSection } from "./styles";
+import { Wrapper, FooterSection, CopyRightSection, MenuTitle } from "./styles";
 import logoFooter from "img/footer.png";
 import { P1, TitleLink } from "components/typography";
 import { NavLink } from "react-router-dom";
@@ -25,7 +25,7 @@ function index() {
         <div className="flex-row flex-wrap">
           <FooterSection>
             <div>
-              <h5 className="color-grey text-uppercase">page</h5>
+              <MenuTitle className="color-grey text-uppercase">page</MenuTitle>
             </div>
             <div className="flex-column">
               <NavLink to="/home" onClick={() => scrollToTop()}>
@@ -44,7 +44,9 @@ function index() {
           </FooterSection>
           <FooterSection>
             <div>
-              <h5 className="color-grey text-uppercase">network</h5>
+              <MenuTitle className="color-grey text-uppercase">
+                network
+              </MenuTitle>
             </div>
             <div className="flex-column">
               <TitleLink>My Game</TitleLink>
@@ -54,7 +56,7 @@ function index() {
           </FooterSection>
           <FooterSection>
             <div>
-              <h5 className="color-grey text-uppercase">link</h5>
+              <MenuTitle className="color-grey text-uppercase">link</MenuTitle>
             </div>
             <div className="flex-column">
               <TitleLink>Stiemap</TitleLink>
@@ -63,7 +65,9 @@ function index() {
           </FooterSection>
           <FooterSection>
             <div>
-              <h5 className="color-grey text-uppercase">Get In Touch</h5>
+              <MenuTitle className="color-grey text-uppercase">
+                Get In Touch
+              </MenuTitle>
             </div>
             <div className="section-part-footer">
               <FacebookIcon className="footer-icon"></FacebookIcon>

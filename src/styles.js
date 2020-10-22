@@ -66,7 +66,7 @@ export const WrapperApp = styled.div`
   }
 
   .color-grey {
-    color: #8f92b3;
+    color: #6d7979;
   }
 
   .text-uppercase {

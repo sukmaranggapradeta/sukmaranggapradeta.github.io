@@ -71,16 +71,16 @@ function index() {
     });
   };
 
-  const hrStyle = {
-    border: "5px solid rgb(23, 162, 184)",
-  };
+  // const hrStyle = {
+  //   border: "5px solid rgb(23, 162, 184)",
+  // };
 
-  const subtotal = [0, 100];
-  const add = (a, b) => a + b;
-  const sum = subtotal.reduce(add);
+  // const subtotal = [0, 100];
+  // const add = (a, b) => a + b;
+  // const sum = subtotal.reduce(add);
 
-  const tax = sum * 0.1;
-  const total = sum + tax;
+  // const tax = sum * 0.1;
+  // const total = sum + tax;
 
   return (
     <Wrapper className="wrapper-body-content">

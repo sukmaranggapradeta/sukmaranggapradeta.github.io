@@ -156,3 +156,17 @@ export const CopyRightSection = styled.div`
     text-align: center;
   }
 `;
+
+export const MenuTitle = styled.div`
+  font-size: 0.83em;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+
+  @media (max-width: ${MEDIUM}) {
+  }
+  @media (max-width: ${SMALL}) {
+  }
+`;
