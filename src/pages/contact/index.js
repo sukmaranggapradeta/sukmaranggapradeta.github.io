@@ -24,11 +24,41 @@ function index() {
       </H2>
 
       <div className="my-16">
-        <FacebookIcon className="footer-icon"></FacebookIcon>
-        <WhatsAppIcon className="footer-icon"></WhatsAppIcon>
-        <IntagramIcon className="footer-icon"></IntagramIcon>
-        <LinkInIcon className="footer-icon"></LinkInIcon>
-        <YoutubeIcon className="footer-icon"></YoutubeIcon>
+        <a
+          href="https://www.facebook.com/sukmaranggapradeta/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FacebookIcon className="footer-icon"></FacebookIcon>
+        </a>
+        <a
+          href="https://api.whatsapp.com/send?phone=6281337682040&text=`Hi Sukma, #fromwebsite`&source=&data="
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <WhatsAppIcon className="footer-icon"></WhatsAppIcon>
+        </a>
+        <a
+          href="https://www.instagram.com/pradetasukmarangga/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IntagramIcon className="footer-icon"></IntagramIcon>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/sukma-rangga-pradita-wijaya/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <LinkInIcon className="footer-icon"></LinkInIcon>
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCpHXgO-pmICndl2tAPaHxqg?view_as=subscriber"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <YoutubeIcon className="footer-icon"></YoutubeIcon>
+        </a>
         {/* <TwitterIcon className="footer-icon"></TwitterIcon> */}
       </div>
     </Wrapper>
