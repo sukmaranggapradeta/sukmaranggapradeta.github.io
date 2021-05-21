@@ -16,7 +16,7 @@ import Loading from "components/loading";
 const Home = lazy(() => import("pages/home"));
 const AboutMe = lazy(() => import("pages/about-me"));
 const Contact = lazy(() => import("pages/contact"));
-const Project = lazy(() => import("pages/projects"));
+const ProjectsPage = lazy(() => import("pages/projects"));
 // const NotFound = lazy(() => import("pages/not-found"));
 
 function App() {
@@ -33,10 +33,10 @@ function App() {
             <Redirect to="/home" />
           </Route>
           <Route exact path="/home" component={Home} />
-          <Route exact path="/project" component={Project} />
+          <Route exact path="/project" component={ProjectsPage} />
           <Route exact path="/about" component={AboutMe} />
           <Route exact path="/contact" component={Contact} />
-          {/* <Route component={NotFound} /> */}
+          {/* <Route exact path="" component={NotFound} /> */}
           {/* </HashRouter> */}
           {/* </Switch> */}
         </Suspense>

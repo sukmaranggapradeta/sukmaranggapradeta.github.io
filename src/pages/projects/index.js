@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Wrapper } from "./styles";
+
 import CardProject from "components/card-project";
+import Modal from "components/modal";
+
 import { Helmet } from "react-helmet";
 import { projects } from "./actions";
 
-function index() {
+function ProjectsPage() {
+  const [showModal, setShowModal] = useState({ isShow: false, data: "" });
+
   return (
     <Wrapper className="wrapper-body-content flex-wrap flex-space-between">
       <Helmet>
@@ -15,10 +20,19 @@ function index() {
         />
       </Helmet>
       {projects.map((item, index) => {
-        return <CardProject key={index} item={item}></CardProject>;
+        return (
+          <CardProject
+            key={index}
+            item={item}
+            setShowModal={setShowModal}
+          ></CardProject>
+        );
       })}
+      {showModal.isShow && (
+        <Modal setShowModal={setShowModal} showModal={showModal} />
+      )}
     </Wrapper>
   );
 }
 
-export default index;
+export default ProjectsPage;

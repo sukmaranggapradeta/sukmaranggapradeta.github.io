@@ -19,8 +19,11 @@ function index() {
         <CardImgText
           title="</ Hi, I'm Software Developer "
           button
-          description={`I grew up in Denpasar, Bali, Indonesia. I left my hometown to study in Jakarta. After more than 2 years, I can call Jakarta my home now.
-        I am a developer. Now I work as a Front End Developer. I also like learning about photography, hiking and enjoying the beauty of nature`}
+          description={`
+          Hello! I’m Sukma Rangga Pradita Wijaya. I grew up in Denpasar, Bali, Indonesia.
+          I left my hometown to study in Jakarta. I'm currently a Front End Web Developer with 2 years experience. 
+          I'm particularly adept with various front end technical stacks such as React.js, styled-component, Vue.js, HTML, CSS, and Javascript, along with creativity, innovation and solution-orientation in mind.
+I also like learning about photography, hiking and enjoying the beauty of nature`}
         ></CardImgText>
 
         {/* <CardImg

@@ -4,8 +4,8 @@ import { Helmet } from "react-helmet";
 import CardImg from "components/card-img";
 import CardText from "components/card-text";
 // import html2canvas from "html2canvas";
-import jsPDF from "jspdf";
-import * as html2canvas from "html2canvas";
+// import jsPDF from "jspdf";
+// import * as html2canvas from "html2canvas";
 
 function index() {
   // const downloadimage = () => {
@@ -23,53 +23,53 @@ function index() {
   //   console.log("END downloadimage");
   // };
 
-  const handlePdf = () => {
-    window.scrollTo(0, 0);
-    const input = document.getElementById("page");
+  // const handlePdf = () => {
+  //   window.scrollTo(0, 0);
+  //   const input = document.getElementById("page");
 
-    console.log("inputnya page", input);
-    html2canvas(input, {
-      useCORS: true, // solve problems across the picture
-      // taintTest: false,
-      allowTaint: true,
-      // height: 842,
-    }).then(canvas => {
-      var contentWidth = canvas.width;
-      var contentHeight = canvas.height;
+  //   console.log("inputnya page", input);
+  //   html2canvas(input, {
+  //     useCORS: true, // solve problems across the picture
+  //     // taintTest: false,
+  //     allowTaint: true,
+  //     // height: 842,
+  //   }).then(canvas => {
+  //     var contentWidth = canvas.width;
+  //     var contentHeight = canvas.height;
 
-      // display a pdf html page generated canvas height;
-      var pageHeight = (contentWidth / 592.28) * 841.89;
-      // not generated pdf html page height
-      var leftHeight = contentHeight;
-      // page offsets
-      var position = 0;
-      // size paper a4 [595.28,841.89], html page canvas is generated in the image width and height of the pdf
-      var imgWidth = 595.28;
-      var imgHeight = (592.28 / contentWidth) * contentHeight;
+  //     // display a pdf html page generated canvas height;
+  //     var pageHeight = (contentWidth / 592.28) * 841.89;
+  //     // not generated pdf html page height
+  //     var leftHeight = contentHeight;
+  //     // page offsets
+  //     var position = 0;
+  //     // size paper a4 [595.28,841.89], html page canvas is generated in the image width and height of the pdf
+  //     var imgWidth = 595.28;
+  //     var imgHeight = (592.28 / contentWidth) * contentHeight;
 
-      var pageData = canvas.toDataURL("image/png", 1.0);
-      var pdf = new jsPDF("", "pt", "a4");
+  //     var pageData = canvas.toDataURL("image/png", 1.0);
+  //     var pdf = new jsPDF("", "pt", "a4");
 
-      // we need to distinguish between two highly, highly practical one html page, the page height and generate the pdf (841.89)
-      // When the content of the display range does not exceed a pdf without pagination
-      if (leftHeight < pageHeight) {
-        console.log("masuk if", leftHeight, pageHeight);
-        pdf.addImage(pageData, "PNG", 0, 0, imgWidth, imgHeight);
-      } else {
-        console.log("masuk else", leftHeight, pageHeight);
-        while (leftHeight > 0) {
-          pdf.addImage(pageData, "PNG", 0, position, imgWidth, imgHeight);
-          leftHeight -= pageHeight;
-          position -= 841.89;
-          // Avoid adding blank pages
-          if (leftHeight > 0) {
-            pdf.addPage();
-          }
-        }
-      }
-      pdf.save("check .pdf");
-    });
-  };
+  //     // we need to distinguish between two highly, highly practical one html page, the page height and generate the pdf (841.89)
+  //     // When the content of the display range does not exceed a pdf without pagination
+  //     if (leftHeight < pageHeight) {
+  //       console.log("masuk if", leftHeight, pageHeight);
+  //       pdf.addImage(pageData, "PNG", 0, 0, imgWidth, imgHeight);
+  //     } else {
+  //       console.log("masuk else", leftHeight, pageHeight);
+  //       while (leftHeight > 0) {
+  //         pdf.addImage(pageData, "PNG", 0, position, imgWidth, imgHeight);
+  //         leftHeight -= pageHeight;
+  //         position -= 841.89;
+  //         // Avoid adding blank pages
+  //         if (leftHeight > 0) {
+  //           pdf.addPage();
+  //         }
+  //       }
+  //     }
+  //     pdf.save("check .pdf");
+  //   });
+  // };
 
   // const hrStyle = {
   //   border: "5px solid rgb(23, 162, 184)",

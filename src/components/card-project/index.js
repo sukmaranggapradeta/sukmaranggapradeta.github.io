@@ -3,7 +3,7 @@ import { Wrapper, SectionTop, SectionBottom, Title } from "./styles";
 // import { NavLink } from "react-router-dom";
 import { P1 } from "components/typography";
 
-function index({ item }) {
+function index({ item, setShowModal }) {
   return (
     <Wrapper className="card">
       {item.url ? (
@@ -31,7 +31,10 @@ function index({ item }) {
           </SectionBottom>
         </a>
       ) : (
-        <>
+        <div
+          onClick={() => setShowModal({ isShow: true, data: item.title })}
+          style={{ cursor: "pointer" }}
+        >
           <SectionTop>
             <img
               src={
@@ -53,7 +56,7 @@ function index({ item }) {
               ))}
             </div>
           </SectionBottom>
-        </>
+        </div>
       )}
     </Wrapper>
   );

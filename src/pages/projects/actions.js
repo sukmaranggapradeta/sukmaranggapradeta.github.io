@@ -1,16 +1,30 @@
 export const projects = [
   {
+    title: "Game Batu Gunting Kertas",
+    desc: "Game Sederhana Batu Gunting Kertas",
+    url: "https://srpw-project.github.io/batu-gunting-kertas/",
+    tech: ["React Js", "CSS"],
+    pic: "batu-gunting-kertas.jpeg",
+  },
+  {
+    title: "Sumber Alam Bali",
+    desc: "Company Profile Toko Batu Alam",
+    url: "https://sumberalambali.vercel.app/",
+    tech: ["React Js", "Next Js", "Tailwind"],
+    pic: "sumberalam.jpeg",
+  },
+  {
     title: "Sumber Alam Bali",
     desc: "Company Profile Toko Batu Alam",
     url: "http://www.sumberalambali.com",
-    tech: ["React"],
+    tech: ["React Js", "CSS"],
     pic: "sumberalam.jpeg",
   },
   {
     title: "Wedding Invitation",
     desc: "Undangan Pernikahan Online",
     url: "https://undanganku.github.io/vinosyofi/",
-    tech: ["React"],
+    tech: ["React Js", "CSS"],
     pic: "undanganku.jpeg",
   },
   {
@@ -52,7 +66,7 @@ export const projects = [
     title: "KanBan",
     desc: "Visual Board to manage your work",
     url: "",
-    tech: ["React"],
+    tech: ["React Js", "Firebase"],
     pic: "",
   },
 ];

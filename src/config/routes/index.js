@@ -17,12 +17,12 @@ function index() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/old-match">
+        {/* <Route path="/old-match">
           <Redirect to="/will-match" />
         </Route>
         <Route path="/will-match">
           <Home />
-        </Route>
+        </Route> */}
         <Route path="*">
           <NotFound />
         </Route>
