@@ -21,7 +21,7 @@ function index({ item, setShowModal }) {
           <SectionBottom className="container">
             <Title>{item.title}</Title>
             <P1 className="grey">{item.desc}</P1>
-            <div className="d-flex">
+            <div className="d-flex flex-wrap">
               {item.tech.map((tag, i) => (
                 <div className="tag" key={i}>
                   {tag}
@@ -48,7 +48,7 @@ function index({ item, setShowModal }) {
           <SectionBottom className="container">
             <Title>{item.title}</Title>
             <P1 className="grey">{item.desc}</P1>
-            <div className="d-flex">
+            <div className="d-flex flex-wrap">
               {item.tech.map((tag, i) => (
                 <div className="tag" key={i}>
                   {tag}
