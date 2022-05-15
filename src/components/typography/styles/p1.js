@@ -14,7 +14,7 @@ const P1Style = styled.p`
   }
 
   @media (max-width: ${SMALL}) {
-    font-size: 12px;
+    font-size: 14px;
   }
 `;
 

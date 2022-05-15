@@ -20,8 +20,8 @@ export const Wrapper = styled.div`
   }
 
   @media (max-width: ${MEDIUM}) {
-    width: 47.5%;
-    margin: 0 0 12px 0;
+    width: 100%;
+    margin: 0 0 16px 0;
   }
 
   @media (max-width: ${SMALL}) {

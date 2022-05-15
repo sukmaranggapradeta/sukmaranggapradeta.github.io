@@ -15,3 +15,10 @@ export const Wrapper = styled.div`
   @media (max-width: ${SMALL}) {
   }
 `;
+
+export const ContainerViewMore = styled.div`
+  @media (max-width: ${MEDIUM}) {
+    width:100%;
+  }
+
+`

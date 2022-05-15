@@ -85,6 +85,14 @@ export const WrapperApp = styled.div`
     margin: 16px 0;
   }
 
+  .mt-8{
+    margin-top:8px;
+  }
+
+  .mt-16{
+    margin-top:16px;
+  }
+
   .my-8 {
     margin: 8px 0;
   }
@@ -105,6 +113,9 @@ export const WrapperApp = styled.div`
     margin-bottom: 32px;
   }
 
+  .w-100{
+    width:100%;
+  }
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -133,6 +144,10 @@ export const WrapperApp = styled.div`
 
   .text-center {
     text-align: center;
+  }
+
+  .text-justify{
+    text-align:justify;
   }
 
   @media (max-width: ${MEDIUM}) {
