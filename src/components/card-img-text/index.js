@@ -1,5 +1,5 @@
 import React from "react";
-import { Wrapper, WrapperImg ,Content} from "./styles";
+import { Wrapper, WrapperImg, Content } from "./styles";
 import { H2, P1 } from "components/typography/index";
 import Button from "components/button";
 // import MyPic from "img/aboutMe.webm";
@@ -29,7 +29,8 @@ function index(props) {
           src={
             props.img
               ? props.img
-              : "https://static.klob.id/image_bank/aboutus/sukma.jpg"
+              : // : "https://github.com/sukmaranggapradeta/kodecinta_img/blob/main/sukma-0.png?raw=true"
+                "https://github.com/sukmaranggapradeta/kodecinta_img/blob/main/sukma-green.png?raw=true"
           }
           alt="sukma rangga pradita"
         />
@@ -37,7 +38,12 @@ function index(props) {
       <Content>
         {props.title && <H2 className="font-bold black">{props.title}</H2>}
 
-        {props.description && <P1 className="grey text-justify">{props.description}</P1>}
+        {props?.description && (
+          <P1 className="grey text-justify">{props?.description}</P1>
+        )}
+        {props?.description2 && (
+          <P1 className="grey text-justify">{props?.description2}</P1>
+        )}
 
         {props.button && (
           <div className="flex-row">

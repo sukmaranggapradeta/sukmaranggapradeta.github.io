@@ -59,8 +59,7 @@ function index() {
               <MenuTitle className="color-grey text-uppercase">link</MenuTitle>
             </div>
             <div className="flex-column">
-              <TitleLink>Stiemap</TitleLink>
-              <TitleLink>Credit</TitleLink>
+              <TitleLink>Support</TitleLink>
             </div>
           </FooterSection>
           <FooterSection>

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 // import CardText from "components/card-text";
 import { Helmet } from "react-helmet";
 
-import Button from "components/button";
+// import Button from "components/button";
 import CardImgText from "components/card-img-text";
 import { H2 } from "components/typography/index";
 import Modal from "components/modal";
@@ -11,14 +11,17 @@ import CardProject from "components/card-project";
 
 import { projects } from "../projects/actions";
 
-import { Wrapper,ContainerViewMore } from "./styles";
+import {
+  Wrapper,
+  // ContainerViewMore
+} from "./styles";
 
 function Index(props) {
   const [showModal, setShowModal] = useState({ isShow: false, data: "" });
 
-  const viewMoreHandler = () => {
-    props.history.push("/project");
-  };
+  // const viewMoreHandler = () => {
+  //   props.history.push("/project");
+  // };
 
   return (
     <Wrapper className="wrapper-body-content flex-center">
@@ -30,7 +33,7 @@ function Index(props) {
         />
       </Helmet>
       <div className="flex-column flex-center">
-        <CardImgText
+        {/* <CardImgText
           title="</ Hi, I'm Software Developer "
           // button
           description={`
@@ -38,8 +41,20 @@ function Index(props) {
           I left my hometown to study in Jakarta. I'm currently a Front End Web Developer with 2 years experience. 
           I'm particularly adept with various front end technical stacks such as React.js, styled-component, Vue.js, HTML, CSS, and Javascript, along with creativity, innovation and solution-orientation in mind.
 I also like learning about photography, hiking and enjoying the beauty of nature`}
+        ></CardImgText> */}
+        <CardImgText
+          title="</ Mencari Front End Developer Profesional? Anda Berada di Tempat yang Tepat."
+          // button
+          description={`
+          Halo, nama saya Sukma Rangga Pradita Wijaya. 
+          Saya seorang front-end developer dengan pengalaman lebih dari 3 tahun dalam mengembangkan antarmuka pengguna yang menarik dan responsif untuk aplikasi web. 
+          Saya memiliki pengetahuan yang mendalam tentang HTML, CSS, JavaScript, React Js, Next Js. 
+          Saya juga berpengalaman dalam mengoptimalkan kinerja aplikasi web dan menerapkan praktik terbaik dalam hal aksesibilitas web. 
+`}
+          description2={`
+          Saya senang bekerja dalam tim yang kolaboratif dan siap untuk menghadapi tantangan dalam mengembangkan solusi kreatif untuk memenuhi kebutuhan pengguna dan mencapai tujuan bisnis. 
+          Dengan pengalaman dan keahlian saya sebagai front-end developer, saya siap untuk berkontribusi dalam pengembangan aplikasi web yang menarik, responsif, dan berkinerja tinggi.`}
         ></CardImgText>
-
 
         {/* <CardImg
           className="mb-32"
@@ -55,22 +70,21 @@ I also like learning about photography, hiking and enjoying the beauty of nature
         <div className="d-flex flex-wrap">
           {projects.map((item, index) => {
             return (
-              index < 6 && (
-                <CardProject
-                  key={index}
-                  item={item}
-                  setShowModal={setShowModal}
-                ></CardProject>
-              )
+              // index < 16 && (
+              <CardProject
+                key={index}
+                item={item}
+                setShowModal={setShowModal}
+              ></CardProject>
+              // )
             );
           })}
         </div>
-        <ContainerViewMore className="d-flex justify-content-center mt-8 mb-16">
-        
+        {/* <ContainerViewMore className="d-flex justify-content-center mt-8 mb-16">
           <Button primary onClick={() => viewMoreHandler()}>
             View More
           </Button>
-        </ContainerViewMore>
+        </ContainerViewMore> */}
         {showModal.isShow && (
           <Modal setShowModal={setShowModal} showModal={showModal} />
         )}

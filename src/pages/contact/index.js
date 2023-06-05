@@ -16,6 +16,10 @@ function index() {
       <FancyCard className="my-16">
         <img src="https://static.klob.id/image_bank/aboutus/sukma.jpg" alt="" />
       </FancyCard>
+      {/* <img
+        src="https://github.com/sukmaranggapradeta/kodecinta_img/blob/main/sukma-green.png?raw=true"
+        alt=""
+      /> */}
       <H2 className="font-bold black my-8 text-center">
         SUKMA RANGGA PRADITA WIJAYA
       </H2>

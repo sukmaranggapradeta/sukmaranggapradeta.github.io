@@ -1,8 +1,9 @@
 import React from "react";
 import { Wrapper } from "./styles";
 import { Helmet } from "react-helmet";
-import CardImg from "components/card-img";
-import CardText from "components/card-text";
+// import CardImg from "components/card-img";
+// import CardText from "components/card-text";
+import CardImgText from "components/card-img-text";
 // import html2canvas from "html2canvas";
 // import jsPDF from "jspdf";
 // import * as html2canvas from "html2canvas";
@@ -178,14 +179,19 @@ function index() {
         Generate PDF
       </button> */}
 
-      <CardImg
-        className="mb-32"
-        img="https://raw.githubusercontent.com/sukmaranggapradeta/public/f2209ba9734d0b2eac546c6bd726d9eab4f87451/undraw_under_construction_46pa.svg"
-      />
-      <CardText
-        title="Under Maintanance"
-        description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, nostrum porro ex fugiat deserunt mollitia cupiditate dolores, perferendis doloremque officia alias reprehenderit nobis amet! Est non autem quas consequuntur nihil esse accusantium ipsa saepe officia natus sequi enim, quos, provident delectus quam. Nesciunt veniam tenetur quia sapiente! Voluptatum, eum quae."
-      />
+      <CardImgText
+        title="</ Mencari Front End Developer Profesional? Anda Berada di Tempat yang Tepat."
+        // button
+        description={`
+          Halo, nama saya Sukma Rangga Pradita Wijaya. 
+          Saya seorang front-end developer dengan pengalaman lebih dari 3 tahun dalam mengembangkan antarmuka pengguna yang menarik dan responsif untuk aplikasi web. 
+          Saya memiliki pengetahuan yang mendalam tentang HTML, CSS, JavaScript, React Js, Next Js. 
+          Saya juga berpengalaman dalam mengoptimalkan kinerja aplikasi web dan menerapkan praktik terbaik dalam hal aksesibilitas web. 
+`}
+        description2={`
+          Saya senang bekerja dalam tim yang kolaboratif dan siap untuk menghadapi tantangan dalam mengembangkan solusi kreatif untuk memenuhi kebutuhan pengguna dan mencapai tujuan bisnis. 
+          Dengan pengalaman dan keahlian saya sebagai front-end developer, saya siap untuk berkontribusi dalam pengembangan aplikasi web yang menarik, responsif, dan berkinerja tinggi.`}
+      ></CardImgText>
     </Wrapper>
   );
 }
